@@ -1,0 +1,44 @@
+#Wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  height: 96%;
+  top: 2%;
+}
+
+#Wrapper #Previewer,
+#Wrapper #Note {
+  display: flex;
+  width: 50%;
+  margin: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 30px 20px 20px 30px #ededed;
+}
+
+#Wrapper #line {
+  border: 0.5px solid #4f4f4f;
+}
+
+.Title {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+  line-height: 0;
+}
+
+.TitleNote {
+  background-color: #2ec972;
+}
+.TitlePreview {
+  background-color: #5355db;
+}
+
+.Title h1 {
+  margin: 2.5rem;
+}
