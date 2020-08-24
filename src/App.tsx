@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import "./Main.scss"
 
-function App() {
+const App = () => {
+  const [markdown, setMarkdown] = React.useState("")
+
+  const onHandleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMarkdown(e.currentTarget.value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="Wrapper">
+      <div id="Note">
+        <div className="Title TitleNote noselect">
+          <h1>Markdown</h1>
+          <div className="TextArea"></div>
+        </div>
+      </div>
+      <div id="link"></div>
+      <div id="Previewer" className="noselect">
+        <div className="Title TitlePreview">
+          <h1>Previewer</h1>
+          <div className="TextArea"></div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
